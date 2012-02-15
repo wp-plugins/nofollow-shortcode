@@ -1,4 +1,4 @@
-=== Commission Junction Link Shortcode ===
+=== Nofollow Shortcode ===
 Plugin URI: http://wikiduh.com/plugins/nofollow-shortcode
 Contributors: bitacre
 Donate link: http://wikiduh.com/donate
