@@ -23,7 +23,7 @@ This plugin allows you insert links with the nofollow rel tag to prevent search 
 
 = How do I use the shortcode? =
 
-Simply type `[nofollow url="link-url.com"]Example link[/cj]` into your post. Replace `link-url.com` and `Example link` with your link's information.
+Simply type `[nofollow url="link-url.com"]Example link[/nofollow]` into your post. Replace `link-url.com` and `Example link` with your link's information.
 
 You can also include other link optional attributes (if they are omitted, the title attribute will not be inserted and the target will default to _blank). A full example of the shortcode's potential is `[nofollow url="link-url.com" title="Title of Link" target="_top"]Link Text[/nofollow]`.
 
