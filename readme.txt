@@ -4,7 +4,7 @@ Contributors: bitacre
 Donate link: http://wikiduh.com/donate
 Tags: nofollow,link,meta,rel,rel nofollow,seo,link meta,nofollow links,shortcode
 Requires at least: 2.8
-Tested up to: 3.3.2
+Tested up to: 3.4
 Stable tag: 1.0
 
 The simplest way to insert `rel=nofollow` links into your posts or pages.
