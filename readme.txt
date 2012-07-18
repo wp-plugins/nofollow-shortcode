@@ -11,8 +11,6 @@ The simplest way to insert `rel=nofollow` links into your posts or pages.
 
 == Description ==
 
-*This plugin is no longer maintained as of April 2, 2012. Please download the [Ultimate Nofollow](http://wordpress.org/extend/plugins/nofollow/) Plugin for a free, up to date, and much more feature rich alternative.*
-
 This plugin allows you to insert links with the nofollow rel tag to prevent search engines from crawling them. The shortcode also supports `target=` and `title=` attributes. 
 
 == Installation ==
