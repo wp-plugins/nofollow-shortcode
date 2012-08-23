@@ -3,7 +3,7 @@
 Plugin Name: Nofollow Shortcode
 Plugin URI: http://wikiduh.com/plugins/nofollow-shortcode
 Description: The simplest way to insert 'rel=nofollow' links into your posts or pages.
-Version: 1.0
+Version: 1.1
 Author: bitacre
 Author URI: http://wikiduh.com
 
@@ -31,7 +31,7 @@ function trim_url_nofollow($untrimmed) { // sanatize url inputs
 }
 
 function nofollow_link( $atts, $content=NULL ) {
-	extract( shortcode_atts( array( 'url'=>NULL, 'title'=>NULL, 'target'=>'_blank' ), $atts ) );
+	extract( shortcode_atts( array( 'url'=>NULL, 'href'=>NULL, 'title'=>NULL, 'target'=>'_blank' ), $atts ) );
 	//error checking
 	$errormsg = '<!--Nofollow shortcode insertion failed. The correct syntax is [nofollow url="http://link-url.com"]link text[/nofollow]. Reason for failure: ';
 	$iserror = 0;
@@ -43,7 +43,7 @@ function nofollow_link( $atts, $content=NULL ) {
 	}
 	
 	// sanatize input
-	$cleanurl = trim_url_nofollow($url);
+	$cleanurl = ( !empty($url) ? trim_url_nofollow($url) : trim_url_nofollow($href) );
 		
 	// create link code
 	if(is_null($title)) $title_chunk = NULL;
