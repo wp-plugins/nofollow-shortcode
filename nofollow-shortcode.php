@@ -1,25 +1,25 @@
 <?php
 /*
 Plugin Name: Nofollow Shortcode
-Plugin URI: http://wikiduh.com/plugins/nofollow-shortcode
+Plugin URI: http://shinraholdings.com/plugins/nofollow-shortcode
 Description: The simplest way to insert 'rel=nofollow' links into your posts or pages.
 Version: 1.1
 Author: bitacre
-Author URI: http://wikiduh.com
+Author URI: http://shinraholdings.com
 
 Basic Shortcode Format: [nofollow url="http://link-url.com"]link text[/nofollow]
 Shorter Shortcodes: [nofol] & [nofo]
 Also supports 'target=' & 'title=' attributes, but both are optional and may be omitted.
 	
 License: GPLv2 
-	Copyright 2012 bitacre (plugins@wikiduh.com)
+	Copyright 2012 Shinra Web Holdings (plugins@shinraholdings.com)
 
 */
 
 function set_plugin_meta_nofollow_shortcode($links, $file) { // define additional plugin meta links
 	$plugin = plugin_basename(__FILE__); // '/nofollow-shortcode/nofollow-shortcode.php' by default
     if ($file == $plugin) { // if called for THIS plugin then:
-		$newlinks=array('<a href="http://wikiduh.com/plugins/nofollow-shortcode/help">Help Page</a>',); // array of links to add
+		$newlinks=array('<a href="http://shinraholdings.com/plugins/nofollow-shortcode/help">Help Page</a>',); // array of links to add
 		return array_merge( $links, $newlinks ); // merge new links into existing $links
 	}
 return $links; // return the $links (merged or otherwise)
